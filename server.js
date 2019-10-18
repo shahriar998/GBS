@@ -12,7 +12,7 @@ const app = express();
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
-mongoose.connect("mongodb://localhost/googlebooks", {useNewUrlParser: true});
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/reactreadinglist");
 
 const connection = mongoose.connection;
 
