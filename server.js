@@ -54,7 +54,6 @@ app.post("/api/new", function(req, res) {
         console.log(err);
         res.json({
             message: err.message,
-            error: true
         })
     })
 });
