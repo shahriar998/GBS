@@ -20,7 +20,7 @@ connection.on("connected", () => {
     console.log("Mongoose connected successfully");
 });
 connection.on("error", (err) => {
-    console.log("Mongoose default connection error: " + err);
+    console.log(`Mongoose default connection error: ${err}`);
 });
 
 app.get("/api/cars", function(req, res) {
