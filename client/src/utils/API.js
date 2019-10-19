@@ -6,7 +6,7 @@ export default {
     return axios.get("https://www.googleapis.com/books/v1/volumes?q=" + title);
   },
   // Gets saved Books
-  getBook: function() {
+  getSavedBooks: function() {
     return axios.get("/api/books/");
   },
   // Deletes the Book with the given id
